@@ -1,0 +1,28 @@
+{% extends 'base.html'%}
+
+{%block content%}
+
+<div class="container" style="background-color: blue;">
+  <div class="col-md-8">
+  <div class="well" text-align: 'center' style="background-color: brown;">
+
+    {%for pitch in pitches}
+
+    <p>
+      {{pitch.category}}:{{pitch.content}}
+    </p>
+
+    <img src="https://images.app.goo.gl/ByyCRfrg7heS2JccA">
+    <button>comment</button> <img src="https://images.app.goo.gl/LS3rByDwf6qUGa6n9">
+
+      {%endfor}
+
+
+
+  </div>
+
+  </div>
+
+</div>
+
+  {%endblock}
